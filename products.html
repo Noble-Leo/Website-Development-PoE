@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Freshly Baked Cakes & Pastries | Sweet Heaven Bakery</title>
+    <meta name="description" content="Browse our freshly baked cupcakes, croissants, custom cakes, cookies, tarts and more. Search and sort our menu online.">
+    <meta name="keywords" content="bakery menu, cupcakes, custom cakes, croissants">
+    <meta name="author" content="Sweet Heaven Bakery">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-text">Sweet Heaven</span>
+                <span class="logo-tagline">Bakery</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </div>
+</header>
+
+<main class="section-padding">
+    <div class="container">
+        <div class="section-header">
+            <h1>Our Menu</h1>
+            <p>Everything is baked fresh daily. If we run out, we run out – so get in early.</p>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search for a product..." aria-label="Search products">
+            <select id="sortSelect" aria-label="Sort products">
+                <option value="default">Sort by: Default</option>
+                <option value="priceLow">Price: Low to High</option>
+                <option value="priceHigh">Price: High to Low</option>
+                <option value="nameAZ">Name: A to Z</option>
+            </select>
+        </div>
+
+        <div class="product-grid" id="productContainer"></div>
+
+        <p id="noResults" style="display:none;">No products match your search. Try a different word.</p>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Sweet Heaven Bakery. All rights reserved.</p>
+        <p>
+            <a href="mailto:sweetheavenbakery25@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://instagram.com/sweetheaven629" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://twitter.com/sweetheaven629" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
+            <a href="https://tiktok.com/@sweetheaven629" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+        </p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
