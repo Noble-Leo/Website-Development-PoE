@@ -7,6 +7,14 @@
     <meta name="description" content="View our gallery of freshly baked cupcakes, wedding cakes, cookies, tarts and custom celebration cakes.">
     <meta name="keywords" content="bakery gallery, cake photos, wedding cakes Johannesburg">
     <meta name="author" content="Sweet Heaven Bakery">
+    <link rel="canonical" href="https://sweetheavenbakery.co.za/gallery.html">
+    <meta property="og:title" content="Gallery | Sweet Heaven Bakery">
+    <meta property="og:description" content="View our gallery of sweet creations.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pd.w.org/2026/04/41069e2a83e4a1446.14195419.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,9 +42,7 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
-            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu"><i class="fas fa-bars"></i></button>
         </nav>
     </div>
 </header>
@@ -45,54 +51,60 @@
     <div class="container">
         <div class="section-header">
             <h1>Our Gallery</h1>
-            <p>Some of our favourite creations – freshly baked and beautifully decorated.</p>
+            <p>Click on any photo to see it larger.</p>
         </div>
 
         <div class="gallery-grid">
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1603532648955-039310d9a75b?w=400&h=300&fit=crop&crop=center" alt="Elegant white wedding cake with fresh flowers">
+                <img src="https://www.publicdomainpictures.net/pictures/710000/velka/wedding-cake-1751969087rsN.png" alt="Wedding cake in pastel tones">
                 <p>Wedding Cake</p>
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=400&h=300&fit=crop&crop=center" alt="Assorted homemade cookies on a plate">
+                <img src="https://pd.w.org/2026/06/1866a2145b80d5846.63608257.jpeg" alt="Homemade cookies">
                 <p>Homemade Cookies</p>
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400&h=300&fit=crop&crop=center" alt="Fresh fruit tart with berries and custard">
+                <img src="https://pd.w.org/2026/06/7186a28ed4e64f455.00712049.jpg" alt="Fresh fruit tart">
                 <p>Fresh Fruit Tart</p>
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1559629810-1e60f6ed6b6e?w=400&h=300&fit=crop&crop=center" alt="Chocolate ganache cake slice">
+                <img src="https://pd.w.org/2025/06/4466849b373771309.44989415.jpg" alt="Chocolate cake">
                 <p>Chocolate Ganache Cake</p>
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=400&h=300&fit=crop&crop=center" alt="Colourful cupcakes with buttercream frosting">
+                <img src="https://pd.w.org/2026/04/41069e2a83e4a1446.14195419.jpg" alt="Cupcakes">
                 <p>Signature Cupcakes</p>
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=300&fit=crop&crop=center" alt="Golden butter croissants on a tray">
+                <img src="https://pd.w.org/2026/08/3826a7185f74eb3c6.67443379.jpg" alt="Croissants">
                 <p>Butter Croissants</p>
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400&h=300&fit=crop&crop=center" alt="Custom decorated birthday cake">
-                <p>Custom Celebration Cake</p>
+                <img src="https://pd.w.org/2025/06/640685c117f49d743.04367088.jpg" alt="Assorted pastries">
+                <p>Assorted Pastries</p>
             </div>
             <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?w=400&h=300&fit=crop&crop=center" alt="Assorted pastries displayed on a table">
-                <p>Assorted Pastries</p>
+                <img src="https://pd.w.org/2026/06/1866a2145b80d5846.63608257.jpeg" alt="More cookies">
+                <p>More Treats</p>
             </div>
         </div>
     </div>
 </main>
+
+<!-- Lightbox Modal -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img src="" alt="" id="lightboxImage">
+</div>
 
 <footer>
     <div class="container">
         <p>&copy; 2026 Sweet Heaven Bakery. All rights reserved.</p>
         <p>
             <a href="mailto:sweetheavenbakery25@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://instagram.com/sweetheaven629" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://twitter.com/sweetheaven629" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
-            <a href="https://tiktok.com/@sweetheaven629" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+            <a href="https://instagram.com/sweetheaven629" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://twitter.com/sweetheaven629" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> X</a>
+            <a href="https://tiktok.com/@sweetheaven629" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i> TikTok</a>
         </p>
     </div>
 </footer>

@@ -7,6 +7,14 @@
     <meta name="description" content="Browse our freshly baked cupcakes, croissants, custom cakes, cookies, tarts and more. Search and sort our menu online.">
     <meta name="keywords" content="bakery menu, cupcakes, custom cakes, croissants">
     <meta name="author" content="Sweet Heaven Bakery">
+    <link rel="canonical" href="https://sweetheavenbakery.co.za/products.html">
+    <meta property="og:title" content="Products | Sweet Heaven Bakery">
+    <meta property="og:description" content="Browse our freshly baked menu.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pd.w.org/2026/04/41069e2a83e4a1446.14195419.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,9 +42,7 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
-            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu"><i class="fas fa-bars"></i></button>
         </nav>
     </div>
 </header>
@@ -45,7 +51,7 @@
     <div class="container">
         <div class="section-header">
             <h1>Our Menu</h1>
-            <p>Everything is baked fresh daily. If we run out, we run out – so get in early.</p>
+            <p>Everything is baked fresh daily. Search, sort, or click on a product for details.</p>
         </div>
 
         <div class="controls">
@@ -59,19 +65,30 @@
         </div>
 
         <div class="product-grid" id="productContainer"></div>
-
         <p id="noResults" style="display:none;">No products match your search. Try a different word.</p>
     </div>
 </main>
+
+<!-- Product Modal -->
+<div class="modal" id="productModal">
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+        <img src="" alt="" id="modalImage">
+        <h2 id="modalTitle"></h2>
+        <p id="modalDesc"></p>
+        <p class="product-price" id="modalPrice"></p>
+        <a href="enquiry.html" class="btn btn-primary" style="margin-top:15px; display:inline-block;">Order This</a>
+    </div>
+</div>
 
 <footer>
     <div class="container">
         <p>&copy; 2026 Sweet Heaven Bakery. All rights reserved.</p>
         <p>
             <a href="mailto:sweetheavenbakery25@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://instagram.com/sweetheaven629" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://twitter.com/sweetheaven629" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
-            <a href="https://tiktok.com/@sweetheaven629" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+            <a href="https://instagram.com/sweetheaven629" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://twitter.com/sweetheaven629" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> X</a>
+            <a href="https://tiktok.com/@sweetheaven629" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i> TikTok</a>
         </p>
     </div>
 </footer>

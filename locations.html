@@ -7,7 +7,17 @@
     <meta name="description" content="Visit Sweet Heaven Bakery at one of our three Johannesburg branches: Bedfordview, Fourways, or Sandton.">
     <meta name="keywords" content="bakery Bedfordview, bakery Fourways, bakery Sandton">
     <meta name="author" content="Sweet Heaven Bakery">
+    <link rel="canonical" href="https://sweetheavenbakery.co.za/locations.html">
+    <meta property="og:title" content="Locations | Sweet Heaven Bakery">
+    <meta property="og:description" content="Visit us at one of our three branches.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pd.w.org/2026/04/41069e2a83e4a1446.14195419.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Pacifico&display=swap" rel="stylesheet">
@@ -34,9 +44,7 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
-            <button class="hamburger" id="hamburger" aria-label="Open navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu"><i class="fas fa-bars"></i></button>
         </nav>
     </div>
 </header>
@@ -45,8 +53,11 @@
     <div class="container">
         <div class="section-header">
             <h1>Find Us Near You</h1>
-            <p>Three convenient branches across Johannesburg.</p>
+            <p>Three convenient branches across Johannesburg. Click the markers for details.</p>
         </div>
+
+        <!-- Interactive Map Container -->
+        <div id="map" class="map-box"></div>
 
         <div class="features-grid">
             <div class="feature-item">
@@ -68,10 +79,6 @@
                 <p><i class="fas fa-phone"></i> <a href="tel:+27115556677">+27 11 555 6677</a></p>
             </div>
         </div>
-
-        <div class="bg-blush p-md rounded mt-md text-centre">
-            <p><i class="fas fa-map"></i> Can't find us? Search "Sweet Heaven Bakery" on Google Maps.</p>
-        </div>
     </div>
 </main>
 
@@ -80,13 +87,15 @@
         <p>&copy; 2026 Sweet Heaven Bakery. All rights reserved.</p>
         <p>
             <a href="mailto:sweetheavenbakery25@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://instagram.com/sweetheaven629" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://twitter.com/sweetheaven629" target="_blank"><i class="fab fa-x-twitter"></i> X</a>
-            <a href="https://tiktok.com/@sweetheaven629" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+            <a href="https://instagram.com/sweetheaven629" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+            <a href="https://twitter.com/sweetheaven629" target="_blank" rel="noopener noreferrer"><i class="fab fa-x-twitter"></i> X</a>
+            <a href="https://tiktok.com/@sweetheaven629" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i> TikTok</a>
         </p>
     </div>
 </footer>
 
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
