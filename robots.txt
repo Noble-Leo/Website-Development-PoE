@@ -1,3 +1,12 @@
 User-agent: *
 Allow: /
+Disallow: /js/
+Disallow: /css/
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
 Sitemap: https://sweetheavenbakery.co.za/sitemap.xml
